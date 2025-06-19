@@ -1,7 +1,8 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../context/pageObjects/LoginPage';
-import { ProductsPage } from '../context/pageObjects/ProductsPage';
-import { CheckoutPage } from '../context/pageObjects/CheckoutPage';
+// Update the import path if necessary, or ensure the file exists at this location
+import { LoginPage } from '../pageObjects/LoginPage';
+import { ProductsPage } from '../pageObjects/ProductsPage';
+import { CheckoutPage } from '../pageObjects/CheckoutPage';
 
 test('SauceDemo: login, add 2 items to cart, and checkout', async ({ page }) => {
   const loginPage = new LoginPage(page);
